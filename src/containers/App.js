@@ -1,3 +1,4 @@
+// node module imports
 import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
@@ -6,6 +7,11 @@ import {
   NavLink
 } from 'react-router-dom';
 import { StyleSheet, css } from 'aphrodite';
+
+// custom module imports
+import Home from '../views/Home';
+import Signup from '../views/Signup';
+import NotFound from '../views/NotFound';
 
 const styles = StyleSheet.create({
   navbar: {
@@ -24,10 +30,6 @@ const styles = StyleSheet.create({
     }
   }
 })
-
-const Signup = () => <form className="signup_form"></form>
-const Home = () => <div>Home</div>
-const NotFound = () => <div>NotFound</div>
 
 class App extends Component {
   render() {
